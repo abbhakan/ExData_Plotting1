@@ -1,0 +1,3 @@
+# Ignore .zip and .txt files
+.zip
+.txt
