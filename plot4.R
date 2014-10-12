@@ -1,5 +1,8 @@
 plot4 <- function() {
         
+        # Import library
+        library("sqldf")
+        
         # Set working directory
         setwd("C:/Itera/Coursera/04 Exploratory Data Analysis/Projects/Project 1/ExData_Plotting1")
         
@@ -12,7 +15,7 @@ plot4 <- function() {
                 download.file(fileURL, dest)
                 
                 # Unzip file to working directory
-                unzip("C://Itera/Coursera//04 Exploratory Data Analysis//Projects//Project 1//ExData_Plotting1//household_power_consumption.zip")                
+                unzip("./household_power_consumption.zip")                
         }
         
         # Read file                
@@ -44,7 +47,7 @@ plot4 <- function() {
         plot(dateTime, data$Voltage, xlab = "datetime", ylab = "Voltage", type = "l")                
         
         # Plot 4
-        plot(dateTime, data3$Global_reactive_power, xlab = "datetime", ylab = "Global_reactive_power", type = "l")
+        plot(dateTime, data$Global_reactive_power, xlab = "datetime", ylab = "Global_reactive_power", type = "l")
                 
         # Close device        
         dev.off() 

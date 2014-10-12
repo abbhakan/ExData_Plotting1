@@ -1,5 +1,8 @@
 plot2 <- function() {
         
+        # Import library
+        library("sqldf")
+        
         # Set working directory
         setwd("C:/Itera/Coursera/04 Exploratory Data Analysis/Projects/Project 1/ExData_Plotting1")
         
@@ -12,7 +15,7 @@ plot2 <- function() {
                 download.file(fileURL, dest)
                 
                 # Unzip file to working directory
-                unzip("C://Itera/Coursera//04 Exploratory Data Analysis//Projects//Project 1//ExData_Plotting1//household_power_consumption.zip")                
+                unzip("./household_power_consumption.zip")                
         }
         
         # Read file                
